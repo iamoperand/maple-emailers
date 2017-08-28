@@ -1,792 +1,115 @@
 <head>
-  <title>
-  </title>
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <style type="text/css">
-    body { background-color:#f2f2f2;}
-    a,a.appl-link,a.appl-link:link {text-decoration:none;}
-    a.appl-link:hover {text-decoration:underline;}
-    .appl_lowbrow a,#appl-footer a,a {color:inherit;}
-    *{-webkit-font-smoothing:antialiased}
-    span{font-family:inherit!important; font-size:inherit!important;font-height:inherit!important}
-    @media only screen and (max-device-width: 768px) {
-    .appl_lowbrow,#appl-footer {-webkit-text-size-adjust:100%;}
-    .appl_lowbrow a,#appl-footer a, a { color:inherit; }
-    * { text-rendering:optimizelegibility; }
-    }
-    @media only screen and (min-device-width: 768px) {
-    /* thai copy bug fix*/
-    td.appl_app_icon *, td.appl_app_title *{max-width:204px!important}
-    }
-  </style>
-  <style type="text/css">
-    /* Mobile Styles */
-    @media only screen and (max-width: 480px) {
-    body{}
-    *[class~=appl_desktop]{display:none!important; }
-    div[class~=appl_mobile]{height:auto!important; display:block!important;max-height:none!important; line-height:100%!important; overflow:visible!important; width:auto!important;max-width:none!important;background-color:#fff!important; font-family:Helvetica Neue,Helvetica, Arial, Verdana,sans-serif!important;
-    }
-    section{width:100%; margin:0;padding:0 20px;}
-    section.appl_100 {padding:0;}
-    section img {margin:0!important;max-width:100%!important}
-    section {-webkit-text-size-adjust:none; text-rendering:optimizelegibility; }
-    section[class~=appl_apps] img{ margin:0 auto!important; }
-    section h1{ font-weight:100; font-size:47px; line-height:47px}
-    section p, section a, section h2 { font-weight:200; letter-spacing:.5px;}
-    section h1, section h2, section h3, section p, section p[class~=appl_headline_txt]{color:#333!important, margin: 10px 0;}
-    p[class~=appl_sub_headline] span{display:block; font-size:1.6em!important;line-height:1.2em!Important;font-weight:200!important}
-    p[class~=appl_sub_headline] {padding-top:20px;;padding-bottom:10px!important}
-    section[class~=appl_cat_header] p[class~=appl_sub_headline] span{font-size:20px!important;line-height:1.2em!Important;font-weight:200!important}
-    section p[class~=appl_headline_txt]{ font-size:17px!important;line-height:1.5em; font-weight:300;margin:8px 0 10px 0!Important; }
-    section p[class~=appl_headline_link] a { font-size:18px!important;line-height:1.22em; padding-bottom:10px;font-weight:400; display:block;}
-    section p[class~=appl_headline_link] a img{ width:10px!important}
-    section p[class~=appl_headline_link] a.appl_larger_cta { font-size:18px!important;}
-    section[class~=appl_cat_header] h2{ font-size:24px; line-height:1.1em!important;margin:0px 0 10px 0;}
-    section[class~=appl_cat_header] p{font-size:16px;line-height:1.4em; margin:0 0 10px 0!important; font-weight:300!important;}
-    section[class~=appl_cat_header] p[class~=appl_headline_link] a { font-size:18px!important; line-height:1.22em; font-weight:400; display:block; padding-bottom:10px }
-    section[class~=appl_cat_header] p[class~=appl_headline_link] a img{ width:10px!important}
-    section[class~=appl_apps] > div {padding-bottom:5px;}
-    section[class~=appl_apps] > div:last-child {padding-bottom:18px;}
-    section[class~=appl_apps] img { width:100px!important; height:auto; margin:20px auto 17px!important;}
-    section[class~=appl_apps] p img {width:9px!important;margin:0!Important}
-    section h3 { font-weight:200;font-size:20px; line-height:1.4em; margin:0 0 6px 0!important;}
-    section h3 a:last-child{ font-size:17px!important; line-height:1.3em!important; font-weight:400; color:#666666!important;margin:0 0 6px 0!important;}
-    section h3 a:first-child{ font-weight:200;font-size:20px!important; line-height:1.3em; margin:0 0 6px 0!important;color:#333333!important}
-    section[class~=appl_apps] p {font-size:17px; line-height:1.3em; margin:0 15px 5px 15px!important;font-weight:300;}
-    section[class~=appl_apps] p + p {margin:15px 0 15px 0!important;}
-    h3 ~ p a {font-weight:400;}
-    section[class~=appl_footer]{ margin-top:30px;padding-top:15px!important; background-color:#f2f2f2;}
-    section[class~=appl_footer] * {font-size:9px;font-weight:400;}
-    section[class~=appl_footer] p, section[class~=appl_footer] a {color:#666666!important;line-height:1.65em;}
-    section[class~=appl_footer] p {margin:0 0 16px 0!important; text-align:center;}
-    section[class~=appl_footer] div.appl_lowbrow_1{text-align:center!important; padding-bottom:15px;letter-spacing:0; font-size:8px;}
-    section[class~=appl_footer] div.appl_lowbrow_2{padding-top:10px; padding-bottom:30px;letter-spacing:0;}
-    section[class~=appl_footer] div.appl_lowbrow_1 a,
-    section[class~=appl_footer] div.appl_lowbrow_2 a { letter-spacing:0; white-space:nowrap}
-    section[class~=appl_footer] div.appl_social a {dis-play:inline-block;margin:0 5px 0 5px}
-    section[class~=appl_footer] div.appl_social a img {margin:0; border:0; width:22px; height:auto;}
-    div[class~=appl_mobile] *{ box-sizing:border-box; text-align:center;}
-    section[class~=appl_pad]{ width:100%; padding:0 20px; }
-    section[class~=appl_headline]{ padding-top:27px!important; padding-bottom:20px;}
-    section h1{font-size:34px!important; line-height:1.12em!important; margin:0 0 20px 0!Important; }
-    section[class~=appl_cat_header_img]{ padding-bottom:0px;}
-    section[class~=appl_cat_header]{ padding-top:30px;padding-bottom:20px;}
-    } 
-    /*** new categories mobile ***/
-    section[class~=appl_apps] div.appl_albums > a > img,
-    section[class~=appl_apps] div.appl_artists > a > img,
-    section[class~=appl_apps] div.appl_author > a > img,
-    section[class~=appl_apps] div.appl_books > a > img,
-    section[class~=appl_apps] div.appl_movies > a > img,
-    section[class~=appl_apps] div.appl_playlists > a >img,
-    section[class~=appl_apps] div.appl_providers > a > img
-    section[class~=appl_apps] div.appl_tracks > a > img,
-    section[class~=appl_apps] div.appl_courses > a > img
-    { height:auto; margin:20px auto 17px!important; border:1px solid #eeeeee!important}
-    section[class~=appl_apps] div.appl_courses > a > img {border:0!important}
-    section[class~=appl_apps] div.appl_books > a > img,
-    section[class~=appl_apps] div.appl_movies > a > img{ width:110px!important; }
-    section[class~=appl_apps] div.appl_music_videos > a > img{border:1px solid #eeeeee!important; max-width:270px!important;width:100%!important; height:auto; margin:20px auto 17px!important;}
-    section[class~=appl_footer] div.appl_lowbrow_2{padding-top:10px; padding-bottom:10px;letter-spacing:0;}
-    section[class~=appl_footer] div.appl_lowbrow_2:last-child{padding-top:0px; padding-bottom:20px;letter-spacing:0;}
-    section[class~=appl_footer] div.appl_lowbrow_1{font-size:7px!imporant;}
-    @media only screen and (max-width:480px) {
-    section[class~=appl_pad]{padding-left:40px;padding-right:40px;}
-    section[class~=appl_apps] div > a > img { width:180px!important; height:auto; margin:20px auto 17px!important;}
-    section[class~=appl_apps] div.appl_music_videos > a > img{ max-width:270px!important;width:100%!important; height:auto; margin:20px auto 17px!important;}
-    section[class~=appl_apps] div.appl_books > a > img,
-    section[class~=appl_apps] div.appl_movies > a > img{width:170px!important; height:auto; margin:20px auto 17px!important;}
-    }
-    @media only screen and (max-width:375px) {
-    section[class~=appl_pad]{padding-left:30px;padding-right:30px;}
-    section[class~=appl_apps] div > a > img { width:160px!important; height:auto; margin:20px auto 17px!important;}
-    section[class~=appl_music_videos] div > a > img{ max-width:250px!important;width:100%!important; height:auto; margin:20px auto 17px!important;}
-    section[class~=appl_books] div > a > img,
-    section[class~=appl_movies] div > a > img{width:160px!important; height:auto; margin:20px auto 17px!important;}
-    }
-    @media only screen and (max-width: 320px) {
-    section[class~=appl_pad]{padding-left:20px;padding-right:20px;}
-    section[class~=appl_apps] div > a > img { width:140px!important; height:auto; margin:20px auto 17px!important;}
-    section[class~=appl_apps] div.appl_music_videos > a > img{ max-width:210px!important;width:100%!important; height:auto; margin:20px auto 17px!important;}
-    section[class~=appl_apps] div.appl_books > a > img,
-    section[class~=appl_apps] div.appl_movies > a > img{ width:135px!important; height:auto; margin:20px auto 17px!important;}
-    section p[class~=appl_headline_txt]{ font-size:15px!important;line-height:1.5em; font-weight:300;margin:8px 0 10px 0!Important; }
-    section p[class~=appl_headline_link] a { font-size:15px!important;}
-    section p[class~=appl_headline_link] a img{ width:9px!important}
-    section p[class~=appl_headline_link] a.appl_larger_cta { font-size:16px!important;}
-    section p[class~=appl_headline_link] a.appl_larger_cta img{ width:10px!important}
-    section[class~=appl_cat_header] h2{ font-size:22px; line-height:1.1em!important;margin:0px 0 10px 0;}
-    section[class~=appl_cat_header] p{font-size:15px;line-height:1.4em; margin:0 0 10px 0!important; font-weight:300!important;}
-    section[class~=appl_cat_header] p[class~=appl_headline_link] a { font-size:14px!important; font-weight:400;display:block;}
-    section[class~=appl_cat_header] p[class~=appl_headline_link] a.appl_larger_cta { font-size:15px!important; }
-    section[class~=appl_cat_header] p[class~=appl_headline_link] a img{ width:10px!important}
-    section[class~=appl_apps] p img {width:8px!important;margin:0!Important}
-    section h3 { font-size:19px;}
-    section h3 a:last-child{ font-size:16px!important;}
-    section h3 a:first-child{ font-size:19px!important; }
-    section[class~=appl_apps] p {font-size:14px; }
-    }
-  </style>
-  <!--[if gte mso 9]>
-<style type="text/css">
-table,td,div,p {font-family:Helvetica Neue, Helvetica,Lucida Sans,Lucida Sans Unicode,Lucida Grande,Arial,Verdana,sans-serif !important;line-height:normal !important}
-</style>
-<![endif]-->
-  <!--[if lte mso 7]>
-<style type="text/css">
-table,td,div,p {font-family:Helvetica Neue, Helvetica,Lucida Grande,Lucida Sans,Lucida Sans Unicode,Arial,Helvetica,Verdana,sans-serif !important;line-height:normal}
-</style>
-<![endif]-->
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Polaroid Swing</title>
+        <style type="text/css">
+          @media screen and (max-width:480px) {
+            /*styling for objects with screen size less than 480px; */
+            body, table, td, p, a, li, blockquote {
+              -webkit-text-size-adjust: none!important;
+            }
+            table {
+              /* All tables are 100% width */
+              width: 100% !important;
+              border-style: none !important;
+            }
+            }
+        </style>
+      </head>
+      
+      <body style="-webkit-text-size-adjust: none!important;
+          font-size:14px;
+          line-height:20px;
+          font-family: 'Century Gothic', CenturyGothic, Helvetica, AppleGothic, sans-serif;
+          ">
+        <table width="100%" cellspacing="0" cellpadding="0" style="background-color: white;">
+          <tbody>
+            <tr>
+              <td>
+                <table width="510" align="center" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr style="text-align: center;">
+                      <td style="padding: 30px 30px 0px 30px;">
+                        <a href="#" target="_blank">
+                          <img src="images/concierge_logo.png" width="60%" alt="Polaroid Swing" style="font-size: 20px;">
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table width="100%" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <!--                    START MAIN CONTENT-->
+                              <td style="padding: 30px;">
+                                Hi <strong>@username</strong>,
+                                <div>&nbsp;</div>
+                                <div style="text-align: center">
+                                <span style="font-size: 20px;">Who are we?</span>
+                                </div>
+                                <br> We’ve got some new features in <a style="color:#00A4FF; text-decoration: none;" href="http://r.email.polaroidswing.com/qa08lls7s2fd.html" target="_blank"> the Sw/ng app</a> to tell you about. Read on to learn more, or
+                                <a style="color:#00A4FF; text-decoration: none;" href="http://r.email.polaroidswing.com/qa08me87s2fd.html" target="_blank">launch the app now</a> to see them all.
+                                <br><br>
+                                <a href="http://r.email.polaroidswing.com/qa08n6o7s2fd.html" target="_blank">
+                                  <img src="http://r.email.polaroidswing.com/o1hls7s2fe.png" width="100%" alt="REPLIES">
+                                </a>
+                                <div>&nbsp;</div>
+                                <div>&nbsp;</div>
+                                <div style="text-align: center">
+                                <span style="font-size: 20px;">Our Mission</span>
+                                </div>
+                                <br> Now it’s easy to have a conversation around every Swing - tell your favorite creators that you love their work, or find out where to add a stop on your next vacation. Or you can use our <a href="http://r.email.polaroidswing.com/qa08nz47s2fd.html"
+                                  style="color: black; text-decoration: none;" target="_blank"><strong>iMessage</strong></a> extension to easily share your Swings outside of the app and continue the conversation there.
+                                <br><br>
+                                <a href="http://r.email.polaroidswing.com/qa08ork7s2fd.html" target="_blank">
+                                  <img src="http://r.email.polaroidswing.com/o1ie87s2fe.png" width="100%" alt="BETTER NOTIFICATIONS.">
+                                </a>
+                                <div>&nbsp;</div>
+                                <div>&nbsp;</div>
+                                <div style="text-align: center">
+                                <span style="font-size: 20px;">Hold up, there's more</span>
+                                </div>
+                                <br> Now that you can talk with our vibrant community of creators, that Follow button is even more important. Want to make sure you get notified of every new comment, like and follow? You can now get specific about your
+                                <a
+                                  href="http://r.email.polaroidswing.com/qa08pk07s2fd.html" style="color: black; text-decoration: none;" target="_blank"><strong>notifications</strong></a> in your profile.
+                                  <br><br>
+                                  <a href="http://r.email.polaroidswing.com/qa08qcg7s2fd.html" target="_blank">
+                                    <img src="http://r.email.polaroidswing.com/o1j6o7s2fe.png" width="100%" alt="#MADEWITHSWING">
+                                  </a>
+                                  <br><br>
 
-<body rightmargin="0" leftmargin="0" bgcolor="#f2f2f2" style="margin:0;padding:0;">
-  <div style="display:none; max-height:0; max-width:0;width:0;height:0; overflow:hidden;font-size:1px;color:#ffffff;">
-    The holidays sure get hectic, but with a little help from some of our favorite apps and games, it's easy to take a break whenever you have a moment. Catch up on original shows like <i>Homeland</i>, watch live sports with DirecTV, or build a kingdom
-    in Minecraft—all on your iPhone, iPad, or Apple TV. <img src="http://new.itunes.com/img/APPLE_EMAIL_LINK/spacer2.gif?v=2&amp;a=YuBvBcZ5FtsH0lw4h0F9lH5%2FaIarF6yLbRLfXF%2Be%2BmBrz6i4r9TAl5wzJW0o6pthPrrg4SnVBgo8yBDMr8i3EGz73I9yj7Q83XIl0B35aqI%3D" alt=""
-      width="1" height="1">
-  </div>
-  <div class="appl_desktop">
-    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" class="appl_body appl_container_full">
-      <tbody>
-        <tr>
-          <td bgcolor="#f2f2f2" style="padding-top:20px;padding-left:10px;padding-right:10px;min-width:740px;">
-            <table width="740" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto; border-radius:7px;overflow:hidden;" class="">
-              <tbody>
-                <tr>
-                  <td width="740" valign="top" align="center" style="background-color:#ffffff;" class="appl_content">
-                    <table width="740" cellspacing="0" cellpadding="0" border="0" align="center" class="aapl_hero_img">
-                      <tbody>
-                        <tr>
-                          <td class="appl_hero_img" valign="top" align="center" style="padding-bottom:45px;">
-                            <a href="https://itunes.apple.com/us/genre/ios-entertainment/id6016?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img align="middle" width="740" alt="App Store" class="appl_hero_img1" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features111/v4/6c/d5/5a/6cd55a8f-54a5-c9ba-447b-573d9bef8d4f/TopFeature_1480_800_2x_fe.jpeg"></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="680" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto" class="appl_headline">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-bottom:25px;">
-                            <h1 style="margin-top:0; margin-bottom:10px;font-family:Helvetica Neue, Arial,Helvetica,Verdana,sans-serif;color:#000000; font-weight:100;font-size:47px;line-height:49px">
-Watch, play, and unwind over the&nbsp;holidays.
-</h1>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="680" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto" class="appl_headline">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-bottom:30px;">
-                            <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Arial,Helvetica,Verdana,sans-serif;color:#333333; font-size:18px;line-height:25px; font-weight:300;" class="appl_headline_txt">
-                              The holidays sure get hectic, but with a little help from some of our favorite apps and games, it's easy to take a break whenever you have a moment. Catch up on original shows like <i>Homeland</i>, watch live sports with
-                              DirecTV, or build a kingdom in Minecraft—all on your iPhone, iPad, or Apple&nbsp;TV.
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding-bottom:30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:22px;line-height:22px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&amp;id=25164&amp;at=1000l9RT&amp;ct=HolidayTV2016&amp;itscg=0201&amp;itsct=HolidayTV2016&amp;mt=8&amp;ls=1&amp;app=itunes" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none"
-                                        target="_blank">Start <nobr>watching<img width="13" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <br>
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:22px;line-height:22px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&amp;id=25180&amp;at=1000l9RT&amp;ct=HolidayTV2016&amp;itscg=0201&amp;itsct=HolidayTV2016&amp;mt=8&amp;ls=1&amp;app=itunes" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none"
-                                        target="_blank">Start <nobr>playing<img width="13" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <br>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="740" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto" class="appl_desktop">
-                      <tbody>
-                        <tr>
-                          <td style="padding-bottom:40px;">
-                            <a href="https://itunes.apple.com/us/app/directv-now/id1136238277?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img align="middle" width="740" alt="DirecTV NOW" class="appl_cat_img1" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features71/v4/e0/52/de/e052ded9-b018-5d1d-330d-1eccae194aed/BlurbWide_1480_495_2x_fe.jpeg"></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto" class="appl_cat_headline">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-bottom:20px;">
-                            <div style="text-align:center;">
-                              <h2 style="margin-top:0; margin-bottom:10px;font-family:Helvetica Neue, Arial,Helvetica,Verdana,sans-serif;color:#333333;; font-weight:100;font-size:32px;line-height:35px">
-Drama. Sports. Live or on demand.&nbsp;
-</h2>
-                              <p style="margin-top:0;margin-bottom:10px;font-family:Helvetica Neue,Helvetica,Lucida Grande, Arial,Verdana,sans-serif; font-weight:300;font-size:16px;color:#333333;line-height:22px;margin-top:0 auto;color:#333333" class="appl_headline_txt">
-                                Live TV on more than 100 channels. On-demand favorites like <i>Mr. Robot</i> and <i>Game of Thrones</i>. With this slick new streaming app, you can watch your shows wherever you are—including your favorites from HBO and
-                                Cinemax.*
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding-bottom:30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:18px;line-height:18px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/us/app/directv-now/id1136238277?app=itunes&amp;mt=8" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none" target="_blank">Get DIRECTV <nobr>NOW<img width="12" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="740" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto" class="appl_desktop">
-                      <tbody>
-                        <tr>
-                          <td style="padding-bottom:40px;">
-                            <a href="https://itunes.apple.com/us/app/hulu-stream-movies-watch-latest/id376510438?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img align="middle" width="740" alt="Hulu" class="appl_cat_img1" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features111/v4/65/73/9b/65739b21-8526-10c1-7739-b49ff76d8810/BlurbWide_1480_495_2x_fe.jpeg"></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto" class="appl_cat_headline">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-bottom:20px;">
-                            <div style="text-align:center;">
-                              <h2 style="margin-top:0; margin-bottom:10px;font-family:Helvetica Neue, Arial,Helvetica,Verdana,sans-serif;color:#333333;; font-weight:100;font-size:32px;line-height:35px">
-Fortune favors the original.&nbsp;&nbsp;
-</h2>
-                              <p style="margin-top:0;margin-bottom:10px;font-family:Helvetica Neue,Helvetica,Lucida Grande, Arial,Verdana,sans-serif; font-weight:300;font-size:16px;color:#333333;line-height:22px;margin-top:0 auto;color:#333333" class="appl_headline_txt">
-                                Weather outside frightful? Cozy up to Hulu's hit movies, kid favorites, or its new original show, <i>Shut Eye</i>. Starring Jeffrey Donovan (<i>Burn Notice</i>), it's a dark comedy about storefront psychics and the crime
-                                syndicate that runs them. Start watching with a free one-week trial.*
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding-bottom:30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:18px;line-height:18px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/us/app/hulu-stream-movies-watch-latest/id376510438?app=itunes&amp;mt=8" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none" target="_blank">Get <nobr>Hulu<img width="12" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="740" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto" class="appl_desktop">
-                      <tbody>
-                        <tr>
-                          <td style="padding-bottom:40px;">
-                            <a href="https://itunes.apple.com/us/app/nba/id335744614?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img align="middle" width="740" alt="NBA" class="appl_cat_img1" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features111/v4/d5/e6/3b/d5e63bcd-0244-549a-6499-71f31af63565/BlurbWide_1480_495_2x_fe.jpeg"></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto" class="appl_cat_headline">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-bottom:20px;">
-                            <div style="text-align:center;">
-                              <h2 style="margin-top:0; margin-bottom:10px;font-family:Helvetica Neue, Arial,Helvetica,Verdana,sans-serif;color:#333333;; font-weight:100;font-size:32px;line-height:35px">
-Never miss a buzzer-beater.&nbsp;&nbsp; &nbsp;
-</h2>
-                              <p style="margin-top:0;margin-bottom:10px;font-family:Helvetica Neue,Helvetica,Lucida Grande, Arial,Verdana,sans-serif; font-weight:300;font-size:16px;color:#333333;line-height:22px;margin-top:0 auto;color:#333333" class="appl_headline_txt">
-                                Warriors vs. Cavs? Celtics vs. Lakers? Catch all the action when you get an NBA League Pass subscription, which brings you live games all season long. You can also keep tabs on your favorite teams and players with video highlights, recaps, and
-                                <span
-                                  style="white-space: nowrap">in-game stats.* </span>
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding-bottom:30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:18px;line-height:18px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/us/app/nba/id335744614?app=itunes&amp;mt=8" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none" target="_blank">Get <nobr>NBA<img width="12" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="740" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto" class="appl_desktop">
-                      <tbody>
-                        <tr>
-                          <td style="padding-bottom:40px;">
-                            <a href="https://itunes.apple.com/us/app/showtime/id996246479?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img align="middle" width="740" alt="SHOWTIME" class="appl_cat_img1" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features71/v4/f5/7b/26/f57b26dc-a53a-b4ed-2ef0-c12b98e000e7/BlurbWide_1480_495_2x_fe.jpeg"></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto" class="appl_cat_headline">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-bottom:20px;">
-                            <div style="text-align:center;">
-                              <h2 style="margin-top:0; margin-bottom:10px;font-family:Helvetica Neue, Arial,Helvetica,Verdana,sans-serif;color:#333333;; font-weight:100;font-size:32px;line-height:35px">
-Intrigue upon intrigue.
-</h2>
-                              <p style="margin-top:0;margin-bottom:10px;font-family:Helvetica Neue,Helvetica,Lucida Grande, Arial,Verdana,sans-serif; font-weight:300;font-size:16px;color:#333333;line-height:22px;margin-top:0 auto;color:#333333" class="appl_headline_txt">
-                                Feast on exclusive documentaries, live sports, and original series like the award-winning <i>Homeland</i>. Can't wait for Carrie's next move? With the Showtime app, you can get a head start on Season 6. Starting Dec. 30,
-                                watch the season premiere before it airs on Jan. 15.*
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding-bottom:30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:18px;line-height:18px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/us/app/showtime/id996246479?app=itunes&amp;mt=8" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none" target="_blank">Get <nobr>Showtime<img width="12" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="740" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto" class="appl_desktop">
-                      <tbody>
-                        <tr>
-                          <td style="padding-bottom:40px;">
-                            <a href="https://itunes.apple.com/us/app/minecraft-pocket-edition/id479516143?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img align="middle" width="740" alt="Minecraft" class="appl_cat_img1" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features111/v4/8a/34/24/8a342438-af34-c0ac-c645-a3c83f803d47/BlurbWide_1480_495_2x_fe.jpeg"></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto" class="appl_cat_headline">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-bottom:20px;">
-                            <div style="text-align:center;">
-                              <h2 style="margin-top:0; margin-bottom:10px;font-family:Helvetica Neue, Arial,Helvetica,Verdana,sans-serif;color:#333333;; font-weight:100;font-size:32px;line-height:35px">
-Build your own world.
-</h2>
-                              <p style="margin-top:0;margin-bottom:10px;font-family:Helvetica Neue,Helvetica,Lucida Grande, Arial,Verdana,sans-serif; font-weight:300;font-size:16px;color:#333333;line-height:22px;margin-top:0 auto;color:#333333" class="appl_headline_txt">
-                                Craft, create, battle, explore—you'll do it all in Minecraft. Whether you go it alone or team up with friends in Realms on the Pocket Edition, there's never-ending fun here (literally)—and now you&nbsp;can&nbsp;show off your creations on the big screen
-                                with the Apple&nbsp;TV app.
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding-bottom:30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:18px;line-height:18px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/us/app/minecraft-pocket-edition/id479516143?app=itunes&amp;mt=8" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none" target="_blank">Get Minecraft: Pocket <nobr>Edition<img width="12" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <br>
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:18px;line-height:18px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/us/app/minecraft-apple-tv-edition/id1164598841?app=itunes&amp;mt=8" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none" target="_blank">Get Minecraft: Apple TV <nobr>Edition<img width="12" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="740" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto" class="appl_desktop">
-                      <tbody>
-                        <tr>
-                          <td style="padding-bottom:40px;">
-                            <a href="https://itunes.apple.com/us/app/disney-crossy-road/id1046593064?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img align="middle" width="740" alt="Disney Crossy Road" class="appl_cat_img1" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features71/v4/91/b8/5a/91b85ac4-cba1-5a5f-5f21-d7cb4d6816a9/BlurbWide_1480_495_2x_fe.jpeg"></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto" class="appl_cat_headline">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-bottom:20px;">
-                            <div style="text-align:center;">
-                              <h2 style="margin-top:0; margin-bottom:10px;font-family:Helvetica Neue, Arial,Helvetica,Verdana,sans-serif;color:#333333;; font-weight:100;font-size:32px;line-height:35px">
-“Hey, let me try!”
-</h2>
-                              <p style="margin-top:0;margin-bottom:10px;font-family:Helvetica Neue,Helvetica,Lucida Grande, Arial,Verdana,sans-serif; font-weight:300;font-size:16px;color:#333333;line-height:22px;margin-top:0 auto;color:#333333" class="appl_headline_txt">
-                                Holiday Mickey. Nutcracker Goofy. Santa Ralph. Your uncles and aunts? That's right—with Disney Crossy Road you'll be blending family time with game time. Everyone will want to go for a high score—especially when you play on Apple&nbsp;TV—so you might
-                                want to start&nbsp;practicing now.
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding-bottom:30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:18px;line-height:18px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/us/app/disney-crossy-road/id1046593064?app=itunes&amp;mt=8" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none" target="_blank">Get Disney Crossy <nobr>Road<img width="12" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="740" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto" class="appl_desktop">
-                      <tbody>
-                        <tr>
-                          <td style="padding-bottom:40px;">
-                            <a href="https://itunes.apple.com/us/app/f1-2016/id1130901077?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img align="middle" width="740" alt="F1 Formula One" class="appl_cat_img1" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features111/v4/cf/f9/37/cff9378d-3a34-7729-d87f-9c4fb9d23663/BlurbWide_1480_495_2x_fe.jpeg"></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto" class="appl_cat_headline">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-bottom:20px;">
-                            <div style="text-align:center;">
-                              <h2 style="margin-top:0; margin-bottom:10px;font-family:Helvetica Neue, Arial,Helvetica,Verdana,sans-serif;color:#333333;; font-weight:100;font-size:32px;line-height:35px">
-The title's in your hands.
-</h2>
-                              <p style="margin-top:0;margin-bottom:10px;font-family:Helvetica Neue,Helvetica,Lucida Grande, Arial,Verdana,sans-serif; font-weight:300;font-size:16px;color:#333333;line-height:22px;margin-top:0 auto;color:#333333" class="appl_headline_txt">
-                                Need some competition during your downtime? Racing for a few minutes (or a few hours) should do the trick. This incredible sim sends you flashing around historic F1 tracks like Monaco and Silverstone. It's a pleasure for fans—but with graphics this good,&nbsp;the
-                                whole family will want to gather around to watch.&nbsp;
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding-bottom:30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:18px;line-height:18px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/us/app/f1-2016/id1130901077?app=itunes&amp;mt=8" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none" target="_blank">Get F1 <nobr>2016<img width="12" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="740" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto" class="appl_desktop">
-                      <tbody>
-                        <tr>
-                          <td style="padding-bottom:40px;">
-                            <a href="https://itunes.apple.com/us/app/alliance-air-war-airplane/id1059604202?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img align="middle" width="740" alt="Alliance: Air War" class="appl_cat_img1" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features19/v4/a8/b9/23/a8b9238a-faee-8957-7570-0831675df63a/BlurbWide_1480_495_2x_fe.jpeg"></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto" class="appl_cat_headline">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-bottom:20px;">
-                            <div style="text-align:center;">
-                              <h2 style="margin-top:0; margin-bottom:10px;font-family:Helvetica Neue, Arial,Helvetica,Verdana,sans-serif;color:#333333;; font-weight:100;font-size:32px;line-height:35px">
-Take to the skies.
-</h2>
-                              <p style="margin-top:0;margin-bottom:10px;font-family:Helvetica Neue,Helvetica,Lucida Grande, Arial,Verdana,sans-serif; font-weight:300;font-size:16px;color:#333333;line-height:22px;margin-top:0 auto;color:#333333" class="appl_headline_txt">
-                                Wage war in dogfights that are equal parts intense and&nbsp;stunning. This riveting air-combat game lets you fly a huge selection of planes—from the fighter props of WWII to the jets of the future. It's a perfect break when you just need to&nbsp;spend
-                                some time with your head in the clouds.&nbsp;
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding-bottom:30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-left:5px;padding-right:5px;">
-                                    <p style="margin-top:0; margin-bottom:10px; font-family:Helvetica Neue, Helvetica,Lucida Grande, Arial,Verdana,sans-serif;color:#333333; font-size:18px;line-height:18px; font-weight:300;">
-                                      <a href="https://itunes.apple.com/us/app/alliance-air-war-airplane/id1059604202?app=itunes&amp;mt=8" class="appl-link appl_desktop" style="color:#038aca;text-decoration:none" target="_blank">Get Alliance: Air <nobr>War<img width="12" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width="720" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto;" class="">
-              <tbody>
-                <tr>
-                  <td align="center" style="padding-top:20px;padding-bottom:60px;">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" id="appl-footer" class="">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding-top:20px;padding-bottom:10px;" class="appl_footer_text1 appl_footer_text appl_center">
-                            <div style="font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:9px;line-height:1.6667em;max-width:688px;">
-                              * Subscription required. Hulu trial offer valid for new subscribers only.
-                              <br><br> Some content requires specific hardware or software. Internet access required; data fees may apply. Content prices and availability are subject to change. For more information, see <a style="color:#999999;font-size:9px!important;text-decoration:underline;"
-                                href="https://www.apple.com/itunes/" target="_blank">www.apple.com/itunes</a>. Apple Music requires a subscription, see <a style="color:#999999;font-size:9px!important;text-decoration:underline;" href="https://www.apple.com/music/"
-                                target="_blank">www.apple.com/music/</a> for more information.
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding-top:0;padding-bottom:25px;" class="appl_center appl_footer_text appl_footer_text2">
-                            <div style="font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:9px;line-height:1.6667em">
-                              All rights reserved. Copyright © 2016 Apple Inc. 1 Infinite Loop, Cupertino, CA 95014
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:9px;line-height:1.32em;padding:0" class="appl_lowbrow">
-                            <a href="https://www.apple.com/legal/privacy/en-ww/" class="appl-link" style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap" target="_blank">Privacy Policy</a>                            &nbsp;|&nbsp;
-                            <a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html" class="appl-link" style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap"
-                              target="_blank">Terms &amp; Conditions</a> &nbsp;|&nbsp;
-                            <a href="https://support.apple.com/itunes" class="appl-link" style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap" target="_blank">Support</a>                            &nbsp;|&nbsp;
-                            <a href="https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/accountSummary?at=1000l9RT&amp;ct=HolidayTV2016&amp;itscg=0201&amp;itsct=HolidayTV2016&amp;ls=1&amp;app=itunes" class="appl-link" style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap"
-                              target="_blank">Account</a> &nbsp;|&nbsp;
-                            <a href="https://mynews.apple.com/subscribe/" class="appl-link" style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap" target="_blank">Subscribe</a>                            &nbsp;|&nbsp;
-                            <a href="#" class="appl-link"
-                              style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap" target="_blank">Unsubscribe</a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table cellspacing="0" cellpadding="0" border="0">
-                      <tbody>
-                        <tr class="appl_desktop">
-                          <td height="25"></td>
-                        </tr>
-                        <tr>
-                          <td width="25">
-                            <a href="https://www.facebook.com/AppStore" style="text-decoration: none;" target="_blank"><img width="25" height="25" alt="Facebook" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features71/v4/22/f4/a6/22f4a6ca-4a00-5777-01ec-f2c3947a674e/mza_1615704092680871165.png"></a>
-                          </td>
-                          <td width="20"></td>
-                          <td width="25">
-                            <a href="https://twitter.com/AppStore" style="text-decoration: none;" target="_blank"><img width="25" height="25" alt="Twitter" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features71/v4/39/26/b6/3926b634-7794-174e-acdb-2d5736868055/mza_6769395976336670914.png"></a>
-                          </td>
-                          <td width="20"></td>
-                          <td width="25">
-                            <a href="https://www.pinterest.com/appstore/" style="text-decoration: none;" target="_blank"><img width="25" height="25" alt="Pinterest" style="display:block; margin:0 auto; border:0" src="https://a1.phobos.apple.com/us/r30/Features71/v4/b8/01/bd/b801bd58-60ad-f1db-7eac-8f94f8587817/mza_8888918058322035064.png"></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:9px;line-height:1.32em;padding-top:20px" class="appl_lowbrow">
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-  </div>
-  <div class="appl_mobile" style="display:none; max-height:0; max-width:0;width:0;height:0; overflow:hidden;">
-    <section class="aapl_hero_img appl_100">
-      <a href="https://itunes.apple.com/us/genre/ios-entertainment/id6016?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img width="100%" alt="App Store" class="appl_hero_img1" style="display:block; margin:0; border:0" src="https://a1.phobos.apple.com/us/r30/Features111/v4/6c/d5/5a/6cd55a8f-54a5-c9ba-447b-573d9bef8d4f/TopFeature_640_344_2x_fe.jpeg"></a>
-    </section>
-    <section class="appl_headline appl_pad">
-      <h1 style="">Watch, play, and unwind over the holidays.</h1>
-      <p style="" class="appl_headline_txt">The holidays sure get hectic, but with a little help from some of our favorite apps and games, it's easy to take a break whenever you have a moment. Catch up on original shows like <i>Homeland</i>, watch live sports with DirecTV, or build a kingdom
-        in Minecraft—all on your iPhone, iPad, or Apple&nbsp;TV.</p>
-      <p style="" class="appl_headline_link">
-        <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&amp;id=25164&amp;at=1000l9RT&amp;ct=HolidayTV2016&amp;itscg=0201&amp;itsct=HolidayTV2016&amp;mt=8&amp;ls=1&amp;app=itunes" class="appl-link" style="color:#038aca;text-decoration:none"
-          target="_blank">Start <nobr>watching<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-        <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&amp;id=25180&amp;at=1000l9RT&amp;ct=HolidayTV2016&amp;itscg=0201&amp;itsct=HolidayTV2016&amp;mt=8&amp;ls=1&amp;app=itunes" class="appl-link" style="color:#038aca;text-decoration:none"
-          target="_blank">Start <nobr>playing<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-        <br>
-      </p>
-    </section>
-    <section class="appl_100 appl_cat_header_img">
-      <a href="https://itunes.apple.com/us/app/directv-now/id1136238277?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img width="100%" alt="DirecTV NOW" class="appl_hero_img1" style="display:block; margin:0; border:0" src="https://a1.phobos.apple.com/us/r30/Features71/v4/e0/52/de/e052ded9-b018-5d1d-330d-1eccae194aed/BlurbWide_640_216_2x_fe.jpeg"></a>
-    </section>
-    <section class="appl_pad appl_cat_header">
-      <h2>Drama. Sports. Live or on demand.&nbsp;</h2>
-      <p>Live TV on more than 100 channels. On-demand favorites like <i>Mr. Robot</i> and <i>Game of Thrones</i>. With this slick new streaming app, you can watch your shows wherever you are—including your favorites from HBO and Cinemax.*</p>
-      <p style="" class="appl_headline_link">
-        <a href="https://itunes.apple.com/us/app/directv-now/id1136238277?app=itunes&amp;mt=8" class="appl-link" style="color:#038aca;text-decoration:none" target="_blank">Get DIRECTV <nobr>NOW<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-      </p>
-    </section>
-    <section class="appl_100 appl_cat_header_img">
-      <a href="https://itunes.apple.com/us/app/hulu-stream-movies-watch-latest/id376510438?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img width="100%" alt="Hulu" class="appl_hero_img1" style="display:block; margin:0; border:0" src="https://a1.phobos.apple.com/us/r30/Features111/v4/65/73/9b/65739b21-8526-10c1-7739-b49ff76d8810/BlurbWide_640_216_2x_fe.jpeg"></a>
-    </section>
-    <section class="appl_pad appl_cat_header">
-      <h2>Fortune favors the original.&nbsp;&nbsp;</h2>
-      <p>Weather outside frightful? Cozy up to Hulu's hit movies, kid favorites, or its new original show, <i>Shut Eye</i>. Starring Jeffrey Donovan (<i>Burn Notice</i>), it's a dark comedy about storefront psychics and the crime syndicate that runs them.
-        Start watching with a free one-week trial.*</p>
-      <p style="" class="appl_headline_link">
-        <a href="https://itunes.apple.com/us/app/hulu-stream-movies-watch-latest/id376510438?app=itunes&amp;mt=8" class="appl-link" style="color:#038aca;text-decoration:none" target="_blank">Get <nobr>Hulu<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-      </p>
-    </section>
-    <section class="appl_100 appl_cat_header_img">
-      <a href="https://itunes.apple.com/us/app/nba/id335744614?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img width="100%" alt="NBA" class="appl_hero_img1" style="display:block; margin:0; border:0" src="https://a1.phobos.apple.com/us/r30/Features111/v4/d5/e6/3b/d5e63bcd-0244-549a-6499-71f31af63565/BlurbWide_640_216_2x_fe.jpeg"></a>
-    </section>
-    <section class="appl_pad appl_cat_header">
-      <h2>Never miss a buzzer-beater.&nbsp;&nbsp; &nbsp;</h2>
-      <p>Warriors vs. Cavs? Celtics vs. Lakers? Catch all the action when you get an NBA League Pass subscription, which brings you live games all season long. You can also keep tabs on your favorite teams and players with video highlights, recaps, and
-        <span
-          style="white-space: nowrap">in-game stats.* </span>
-      </p>
-      <p style="" class="appl_headline_link">
-        <a href="https://itunes.apple.com/us/app/nba/id335744614?app=itunes&amp;mt=8" class="appl-link" style="color:#038aca;text-decoration:none" target="_blank">Get <nobr>NBA<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-      </p>
-    </section>
-    <section class="appl_100 appl_cat_header_img">
-      <a href="https://itunes.apple.com/us/app/showtime/id996246479?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img width="100%" alt="SHOWTIME" class="appl_hero_img1" style="display:block; margin:0; border:0" src="https://a1.phobos.apple.com/us/r30/Features71/v4/f5/7b/26/f57b26dc-a53a-b4ed-2ef0-c12b98e000e7/BlurbWide_640_216_2x_fe.jpeg"></a>
-    </section>
-    <section class="appl_pad appl_cat_header">
-      <h2>Intrigue upon intrigue.</h2>
-      <p>Feast on exclusive documentaries, live sports, and original series like the award-winning <i>Homeland</i>. Can't wait for Carrie's next move? With the Showtime app, you can get a head start on Season 6. Starting Dec. 30, watch the season premiere
-        before it airs on Jan. 15.*</p>
-      <p style="" class="appl_headline_link">
-        <a href="https://itunes.apple.com/us/app/showtime/id996246479?app=itunes&amp;mt=8" class="appl-link" style="color:#038aca;text-decoration:none" target="_blank">Get <nobr>Showtime<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-      </p>
-    </section>
-    <section class="appl_100 appl_cat_header_img">
-      <a href="https://itunes.apple.com/us/app/minecraft-pocket-edition/id479516143?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img width="100%" alt="Minecraft" class="appl_hero_img1" style="display:block; margin:0; border:0" src="https://a1.phobos.apple.com/us/r30/Features111/v4/8a/34/24/8a342438-af34-c0ac-c645-a3c83f803d47/BlurbWide_640_216_2x_fe.jpeg"></a>
-    </section>
-    <section class="appl_pad appl_cat_header">
-      <h2>Build your own world.</h2>
-      <p>Craft, create, battle, explore—you'll do it all in Minecraft. Whether you go it alone or team up with friends in Realms on the Pocket Edition, there's never-ending fun here (literally)—and now you&nbsp;can&nbsp;show off your creations on the big
-        screen with the Apple&nbsp;TV app.</p>
-      <p style="" class="appl_headline_link">
-        <a href="https://itunes.apple.com/us/app/minecraft-pocket-edition/id479516143?app=itunes&amp;mt=8" class="appl-link" style="color:#038aca;text-decoration:none" target="_blank">Get Minecraft: Pocket <nobr>Edition<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-        <a href="https://itunes.apple.com/us/app/minecraft-apple-tv-edition/id1164598841?app=itunes&amp;mt=8" class="appl-link" style="color:#038aca;text-decoration:none" target="_blank">Get Minecraft: Apple TV <nobr>Edition<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-      </p>
-    </section>
-    <section class="appl_100 appl_cat_header_img">
-      <a href="https://itunes.apple.com/us/app/disney-crossy-road/id1046593064?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img width="100%" alt="Disney Crossy Road" class="appl_hero_img1" style="display:block; margin:0; border:0" src="https://a1.phobos.apple.com/us/r30/Features71/v4/91/b8/5a/91b85ac4-cba1-5a5f-5f21-d7cb4d6816a9/BlurbWide_640_216_2x_fe.jpeg"></a>
-    </section>
-    <section class="appl_pad appl_cat_header">
-      <h2>“Hey, let me try!”</h2>
-      <p>Holiday Mickey. Nutcracker Goofy. Santa Ralph. Your uncles and aunts? That's right—with Disney Crossy Road you'll be blending family time with game time. Everyone will want to go for a high score—especially when you play on Apple TV—so you might
-        want to start&nbsp;practicing now.</p>
-      <p style="" class="appl_headline_link">
-        <a href="https://itunes.apple.com/us/app/disney-crossy-road/id1046593064?app=itunes&amp;mt=8" class="appl-link" style="color:#038aca;text-decoration:none" target="_blank">Get Disney Crossy <nobr>Road<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-      </p>
-    </section>
-    <section class="appl_100 appl_cat_header_img">
-      <a href="https://itunes.apple.com/us/app/f1-2016/id1130901077?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img width="100%" alt="F1 Formula One" class="appl_hero_img1" style="display:block; margin:0; border:0" src="https://a1.phobos.apple.com/us/r30/Features111/v4/cf/f9/37/cff9378d-3a34-7729-d87f-9c4fb9d23663/BlurbWide_640_216_2x_fe.jpeg"></a>
-    </section>
-    <section class="appl_pad appl_cat_header">
-      <h2>The title's in your hands.</h2>
-      <p>Need some competition during your downtime? Racing for a few minutes (or a few hours) should do the trick. This incredible sim sends you flashing around historic F1 tracks like Monaco and Silverstone. It's a pleasure for fans—but with graphics this
-        good,&nbsp;the whole family will want to gather around to watch.&nbsp;</p>
-      <p style="" class="appl_headline_link">
-        <a href="https://itunes.apple.com/us/app/f1-2016/id1130901077?app=itunes&amp;mt=8" class="appl-link" style="color:#038aca;text-decoration:none" target="_blank">Get F1 <nobr>2016<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-      </p>
-    </section>
-    <section class="appl_100 appl_cat_header_img">
-      <a href="https://itunes.apple.com/us/app/alliance-air-war-airplane/id1059604202?app=itunes&amp;mt=8" style="text-decoration: none;" target="_blank"><img width="100%" alt="Alliance: Air War" class="appl_hero_img1" style="display:block; margin:0; border:0" src="https://a1.phobos.apple.com/us/r30/Features19/v4/a8/b9/23/a8b9238a-faee-8957-7570-0831675df63a/BlurbWide_640_216_2x_fe.jpeg"></a>
-    </section>
-    <section class="appl_pad appl_cat_header">
-      <h2>Take to the skies.</h2>
-      <p>Wage war in dogfights that are equal parts intense and&nbsp;stunning. This riveting air-combat game lets you fly a huge selection of planes—from the fighter props of WWII to the jets of the future. It's a perfect break when you just need to&nbsp;spend
-        some time with your head in the clouds.&nbsp;</p>
-      <p style="" class="appl_headline_link">
-        <a href="https://itunes.apple.com/us/app/alliance-air-war-airplane/id1059604202?app=itunes&amp;mt=8" class="appl-link" style="color:#038aca;text-decoration:none" target="_blank">Get Alliance: Air <nobr>War<img width="8" alt="" border="0" class="more" style="margin:0 auto; border:0" src="https://a1.phobos.apple.com/au/r30/Features71/v4/ba/f1/f2/baf1f2f6-588b-c3bb-375a-1c0856a8baae/mza_1113504921234589156.png"></nobr></a>
-        <br>
-      </p>
-    </section>
-    <section class="appl_pad appl_footer">
-      <p>
-        * Subscription required. Hulu trial offer valid for new subscribers only.
-        <br><br> Some content requires specific hardware or software. Internet access required; data fees may apply. Content prices and availability are subject to change. For more information, see <a style="color:#999999;font-size:9px!important;text-decoration:underline;"
-          href="https://www.apple.com/itunes/" target="_blank">www.apple.com/itunes</a>. Apple Music requires a subscription, see <a style="color:#999999;font-size:9px!important;text-decoration:underline;" href="https://www.apple.com/music/" target="_blank">www.apple.com/music/</a>        for more information.
-      </p>
-      <p>All rights reserved. Copyright © 2016 Apple Inc. 1 Infinite Loop, Cupertino, CA 95014</p>
-      <div class="appl_lowbrow_1">
-        <a href="https://www.apple.com/legal/privacy/en-ww/" class="appl-link" style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap" target="_blank">Privacy Policy</a>        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html" class="appl-link" style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap"
-          target="_blank">Terms &amp; Conditions</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="https://support.apple.com/itunes" class="appl-link" style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap" target="_blank">Support</a>        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/accountSummary?at=1000l9RT&amp;ct=HolidayTV2016&amp;itscg=0201&amp;itsct=HolidayTV2016&amp;ls=1&amp;app=itunes" class="appl-link" style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap"
-          target="_blank">Account</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="https://mynews.apple.com/subscribe/" class="appl-link" style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap" target="_blank">Subscribe</a>        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="https://mynews.apple.com/subscriptions?v=2&amp;la=en_us&amp;a=D8tGRYplt3VmdMWX8Uzyd8F%2FQAwbpTUDRvBpD92o6W66iMfjdr%2BekHcMgSFmkb%2B4jAt87gaxUGoDJMh0STaE4DEfWy0lc0CWMlmr%2FmId8RaZjmf7yJSoMGE%2B9W6GTAseLiX3%2BIkVCyeprV6TRfGUsQ%3D%3D" class="appl-link"
-          style="color:#999999;font-family:Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;color:#999999;font-size:11px;line-height:1.32em;white-space:nowrap" target="_blank">Unsubscribe</a>
-      </div>
-      <div class="appl_social">
-        <a href="https://www.facebook.com/AppStore" style="text-decoration: none;" target="_blank"><img alt="Facebook" src="https://a1.phobos.apple.com/us/r30/Features71/v4/22/f4/a6/22f4a6ca-4a00-5777-01ec-f2c3947a674e/mza_1615704092680871165.png"></a>
-        <a href="https://twitter.com/AppStore" style="text-decoration: none;" target="_blank"><img alt="Twitter" src="https://a1.phobos.apple.com/us/r30/Features71/v4/39/26/b6/3926b634-7794-174e-acdb-2d5736868055/mza_6769395976336670914.png"></a>
-        <a href="https://www.pinterest.com/appstore/" style="text-decoration: none;" target="_blank"><img alt="Pinterest" src="https://a1.phobos.apple.com/us/r30/Features71/v4/b8/01/bd/b801bd58-60ad-f1db-7eac-8f94f8587817/mza_8888918058322035064.png"></a>
-      </div>
-      <div class="appl_lowbrow_2">
-      </div>
-    </section>
-  </div>
-  <div class="appl_desktop" style=" white-space:nowrap!important; font:15px courier; color:#000000; line-height:0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
-
-</body>
+                                  <div>&nbsp;</div>
+                                  <div>&nbsp;</div>
+                                  <div style="text-align: center">
+                                  <span style="font-size: 20px;">What are you waiting for?</span>
+                                  </div>
+                                  
+                                  <br>
+                                  
+                                  <br><br> As always, we’re working to make your experience with Swing the best we possibly can. If you have any questions or concerns, please<a style="color:#00A4FF; text-decoration: none;" href="mailto:support@polaroidswing.com"
+                                    target="_blank"> email us</a> or simply send us a tweet at <a style="color:#00A4FF; text-decoration: none;" href="http://r.email.polaroidswing.com/8rc2uzxc7s2fd.html" target="_blank">@swingbypolaroid</a>. Want to chat about
+                                  the community and how to be more active? <a style="color:#00A4FF; text-decoration: none;" href="mailto:alexandra@polaroidswing.com" target="_blank">Email me, Alexandra</a>!
+                                  <br><br> Love,
+                                  <br><br>
+                                  <strong>Maple Concierge Team</strong>
+                                  <br><br>
+                                  <span style="font-size: 12px;"><i>Have you heard about the <a style="color: black; text-decoration: none;" href="http://r.email.polaroidswing.com/8rc2v0ps7s2fd.html" target="_blank"><strong>Polaroid Swing Artist Support Program</strong></a>? Tag your best Swings with #SwingArtist and learn more <a style="color:#00A4FF; text-decoration: none;" href="http://r.email.polaroidswing.com/8rc2v1i87s2fd.html" target="_blank"> here</a>!</i></span>
+      
+                                  <!--					END MAIN CONTENT-->
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div align="center" style="color: #727272; font-size: 10px;">If you wish to unsubscribe from our newsletter, click <a style="color:#01a4c6;" target="_blank" href="#">here</a></div>
+        <div></div>
+      
+      
+      </body>
